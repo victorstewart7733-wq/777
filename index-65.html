@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Northline is an independent strategy and digital studio helping ambitious businesses move forward with clarity." />
+  <title>Northline — Strategy. Design. Momentum.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#171916;--muted:#777b72;--paper:#f4f3ee;--white:#fffefa;--lime:#d8f36a;--line:rgba(23,25,22,.14);--serif:Georgia,serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:'DM Sans',sans-serif}a{color:inherit;text-decoration:none}.wrap{width:min(1180px,calc(100% - 48px));margin:auto}
+    .nav{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.logo{font:800 22px Manrope,sans-serif;letter-spacing:-1.4px}.logo span{color:#8c9e42}.navlinks{display:flex;gap:34px;font-size:13px;color:#55594f}.navlinks a:hover{color:#000}.nav-cta{padding:12px 18px;border:1px solid var(--ink);border-radius:3px;font-size:12px;font-weight:700;transition:.2s}.nav-cta:hover{background:var(--ink);color:white}
+    .hero{padding:108px 0 92px;display:grid;grid-template-columns:1.2fr .8fr;gap:60px;align-items:end}.eyebrow{font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:700;color:#77834a;display:flex;align-items:center;gap:10px}.eyebrow:before{content:'';width:24px;height:1px;background:#9cae53}.hero h1{font:500 clamp(58px,8vw,108px)/.98 Manrope,sans-serif;letter-spacing:-7px;margin:28px 0 30px;max-width:760px}.hero h1 em{font-family:var(--serif);font-weight:400;letter-spacing:-5px}.hero-copy{max-width:360px;margin:0 0 10px auto;color:#65695f;font-size:16px;line-height:1.8}.hero-actions{display:flex;gap:12px;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:15px 21px;border-radius:3px;background:var(--ink);color:white;font-size:12px;font-weight:700;letter-spacing:.2px}.btn.light{background:transparent;color:var(--ink);border:1px solid var(--line)}.btn:hover{transform:translateY(-2px)}
+    .hero-art{height:420px;background:#222820;position:relative;overflow:hidden;border-radius:4px;margin-bottom:0}.hero-art:before{content:'';position:absolute;width:440px;height:440px;border:1px solid rgba(216,243,106,.45);border-radius:50%;left:50%;top:50%;transform:translate(-50%,-50%)}.hero-art:after{content:'';position:absolute;width:310px;height:310px;border:1px solid rgba(216,243,106,.35);border-radius:50%;left:50%;top:50%;transform:translate(-50%,-50%)}.orb{position:absolute;width:190px;height:190px;left:50%;top:50%;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle at 32% 28%,#f2ffc1,#c4dc60 30%,#82963b 65%,#3a4929 100%);box-shadow:0 0 100px rgba(216,243,106,.2)}.art-label{position:absolute;bottom:24px;left:26px;color:#d9dfca;font-size:10px;letter-spacing:2px;text-transform:uppercase}.art-number{position:absolute;right:25px;top:23px;color:#d9dfca;font:italic 18px var(--serif)}
+    .strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:22px 0;display:flex;justify-content:space-between;gap:20px;color:#777b72;font-size:10px;letter-spacing:1.7px;text-transform:uppercase}.strip strong{color:var(--ink);font-weight:700}
+    section{padding:105px 0}.section-top{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:48px}.section-top h2{font:500 clamp(38px,5vw,62px)/1.05 Manrope,sans-serif;letter-spacing:-3px;margin:15px 0 0;max-width:620px}.section-top p{max-width:300px;color:var(--muted);font-size:14px;line-height:1.8;margin:0}.services{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.service{background:var(--white);padding:30px;min-height:260px;border:1px solid var(--line);display:flex;flex-direction:column;justify-content:space-between;transition:.25s}.service:hover{background:#eaf0d7;transform:translateY(-5px)}.service .num{font-size:11px;color:#8a925e}.service h3{font:600 24px Manrope,sans-serif;letter-spacing:-1px;margin:40px 0 12px}.service p{font-size:13px;color:var(--muted);line-height:1.7;margin:0}.arrow{align-self:flex-end;font-size:22px}
+    .manifesto{background:#20251f;color:#f4f3ee;padding:100px 0}.manifesto-inner{display:grid;grid-template-columns:.5fr 1.5fr;gap:60px}.manifesto h2{font:400 clamp(38px,5vw,66px)/1.15 Manrope,sans-serif;letter-spacing:-3px;margin:0;max-width:780px}.manifesto h2 em{font-family:var(--serif);color:var(--lime);font-weight:400}.manifesto .eyebrow{color:var(--lime)}.manifesto .eyebrow:before{background:var(--lime)}.manifesto-note{color:#a8afa2;font-size:13px;line-height:1.8;max-width:220px;margin-top:22px}
+    .work-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:16px}.project{min-height:360px;background:#dfe4d2;position:relative;overflow:hidden;padding:28px;display:flex;flex-direction:column;justify-content:space-between}.project:nth-child(2){background:#ded8cd}.project:nth-child(3){background:#d7dce0;grid-column:1/-1;min-height:270px}.project-tag{font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#55594f}.project h3{font:600 34px Manrope,sans-serif;letter-spacing:-2px;margin:0;position:relative;z-index:1}.project-shape{position:absolute;width:250px;height:250px;border-radius:50%;right:30px;top:48px;background:linear-gradient(135deg,#a8b77c,#58684a);opacity:.85}.project:nth-child(2) .project-shape{border-radius:4px;transform:rotate(35deg);background:linear-gradient(135deg,#b6a28b,#776b5c);width:210px;height:280px}.project:nth-child(3) .project-shape{width:360px;height:180px;border-radius:50%;right:12%;top:35px;background:linear-gradient(90deg,#aab5bf,#596b78)}
+    .contact{padding:100px 0 110px}.contact-panel{background:var(--lime);padding:60px;display:flex;align-items:end;justify-content:space-between;gap:30px}.contact-panel h2{font:600 clamp(40px,6vw,76px)/1 Manrope,sans-serif;letter-spacing:-5px;margin:18px 0 0;max-width:650px}.contact-panel .btn{background:var(--ink);white-space:nowrap}.footer{padding:30px 0;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;color:#777b72;font-size:11px}.footer strong{color:var(--ink)}
+    @media(max-width:760px){.wrap{width:min(100% - 32px,1180px)}.nav{height:70px}.navlinks{display:none}.hero{padding:76px 0 55px;grid-template-columns:1fr;gap:25px}.hero h1{letter-spacing:-4px}.hero h1 em{letter-spacing:-3px}.hero-copy{margin:0;max-width:460px}.hero-art{height:300px}.strip{flex-wrap:wrap;justify-content:flex-start;gap:14px 24px}.strip span{width:calc(50% - 12px)}section{padding:72px 0}.section-top{display:block}.section-top p{margin-top:20px}.services{grid-template-columns:1fr}.service{min-height:220px}.manifesto{padding:75px 0}.manifesto-inner{grid-template-columns:1fr;gap:30px}.manifesto-note{max-width:420px}.work-grid{grid-template-columns:1fr}.project,.project:nth-child(3){grid-column:auto;min-height:300px}.contact-panel{padding:34px 26px;display:block}.contact-panel h2{letter-spacing:-3px}.contact-panel .btn{margin-top:28px}.footer{gap:15px;flex-wrap:wrap}}
+  </style>
+</head>
+<body>
+  <header class="wrap nav">
+    <a class="logo" href="#top">northline<span>.</span></a>
+    <nav class="navlinks" aria-label="Main navigation"><a href="#studio">Studio</a><a href="#services">Services</a><a href="#work">Selected work</a></nav>
+    <a class="nav-cta" href="#contact">LET'S TALK ↗</a>
+  </header>
+  <main id="top">
+    <div class="wrap hero">
+      <div>
+        <div class="eyebrow">Independent creative & strategy studio</div>
+        <h1>Make your<br>next move <em>matter.</em></h1>
+        <div class="hero-actions"><a class="btn" href="#contact">Start a conversation ↗</a><a class="btn light" href="#services">Explore what we do</a></div>
+      </div>
+      <div class="hero-copy">We help ambitious businesses find their edge through clear strategy, thoughtful design and digital experiences built to move people.</div>
+      <div class="hero-art"><div class="art-number">01 / 03</div><div class="orb"></div><div class="art-label">Clarity creates momentum — Northline Studio</div></div>
+    </div>
+    <div class="wrap strip"><span><strong>Strategy</strong> with intention</span><span><strong>Design</strong> with purpose</span><span><strong>Digital</strong> with direction</span><span>Built for what's next ↗</span></div>
+    <section id="studio" class="wrap">
+      <div class="section-top"><div><div class="eyebrow">A sharper way forward</div><h2>Good ideas deserve<br>great execution.</h2></div><p>Northline brings the big picture into focus. We turn complex challenges into clear, confident steps that help brands grow with purpose.</p></div>
+      <div class="services" id="services">
+        <article class="service"><div class="num">01 / THINK</div><div><h3>Brand & strategy</h3><p>Positioning, research and direction that give your business a reason to stand out.</p></div><div class="arrow">↗</div></article>
+        <article class="service"><div class="num">02 / CREATE</div><div><h3>Digital experiences</h3><p>Distinctive websites and digital touchpoints designed around real people.</p></div><div class="arrow">↗</div></article>
+        <article class="service"><div class="num">03 / GROW</div><div><h3>Growth consulting</h3><p>Practical thinking and focused execution to turn momentum into measurable progress.</p></div><div class="arrow">↗</div></article>
+      </div>
+    </section>
+    <section class="manifesto"><div class="wrap manifesto-inner"><div><div class="eyebrow">The Northline approach</div><p class="manifesto-note">Less noise. Better questions. Work that earns its place and makes a lasting difference.</p></div><h2>We believe progress isn't about doing <em>more.</em> It's about doing what matters — exceptionally well.</h2></div></section>
+    <section id="work" class="wrap"><div class="section-top"><div><div class="eyebrow">A glimpse of our thinking</div><h2>Built around<br>what's possible.</h2></div><p>A few illustrative directions showing how we bring strategy, identity and digital thinking together.</p></div>
+      <div class="work-grid"><article class="project"><div class="project-tag">01 — Brand direction</div><div class="project-shape"></div><h3>Form & Field</h3></article><article class="project"><div class="project-tag">02 — Digital presence</div><div class="project-shape"></div><h3>Maison Alder</h3></article><article class="project"><div class="project-tag">03 — Growth strategy</div><div class="project-shape"></div><h3>New perspectives. Clearer horizons.</h3></article></div>
+    </section>
+    <section id="contact" class="wrap contact"><div class="contact-panel"><div><div class="eyebrow">Your next chapter starts here</div><h2>Have something<br>good in mind?</h2></div><a class="btn" href="mailto:hello@northline.studio">hello@northline.studio ↗</a></div></section>
+  </main>
+  <footer class="wrap footer"><a class="logo" href="#top">northline<span>.</span></a><span>Independent by design. <strong>© 2026 Northline Studio</strong></span><a href="#top">Back to top ↑</a></footer>
+</body>
+</html>
